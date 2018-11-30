@@ -8,11 +8,12 @@
     var map = {
       'app': 'dist/build', // 'dist',
       '@angular': 'node_modules/@angular',
-      '@angular/platform-browser/animations':'node_modules/@angular/platform-browser/bundles/platform-browser-animations.umd.min.js'
+      'rxjs': 'node_modules/rxjs'
     };
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
       'app': {main: 'main.js', defaultExtension: 'js', meta: {'./*.ts': {loader: 'systemjs-angular-loader.js'}}},
+      'rxjs': {main: 'Rx.js', defaultExtension: 'js'}
     };
     var ngPackageNames = [
       'common',
